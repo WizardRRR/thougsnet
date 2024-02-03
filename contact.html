@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat ❤ Date</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Chat ❤ Date</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#explora">Explora</a></li>
+                <li><a href="#comparte">Comparte</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>¡Descubre Chat ❤ Date!</h2>
+            <p>Explora, conecta y descubre. Tu espacio para expresarte y conectarte con personas de ideas afines.</p>
+        </section>
+
+        <section id="explora">
+            <h2>Explora</h2>
+            <p>En Chat ❤ Date, te ofrecemos una plataforma única para explorar y compartir:</p>
+            <ul>
+                <li><strong>Perfiles Personalizados:</strong> Crea un perfil que refleje tu personalidad y tus intereses.</li>
+                <li><strong>Historias Personales:</strong> Publica tus pensamientos, experiencias y descubrimientos en tu propia sección.</li>
+                <li><strong>Conexión Social:</strong> Conéctate con amigos, sigue a personas interesantes y participa en conversaciones significativas.</li>
+                <li><strong>Descubre Contenido:</strong> Explora historias, fotos y actualizaciones de usuarios de todo el mundo.</li>
+            </ul>
+        </section>
+
+        <section id="comparte">
+            <h2>Comparte</h2>
+            <p>Comparte tus pensamientos, experiencias y descubrimientos con la comunidad. Aquí puedes publicar artículos, fotos y más.</p>
+
+            <article>
+                <h3>Explorando nuevos caminos</h3>
+                <p>En mi último viaje, tuve la oportunidad de explorar lugares increíbles. ¡Descubre más sobre mi experiencia y las vistas impresionantes!</p>
+                <a href="#">Leer más...</a>
+            </article>
+
+            <article>
+                <h3>Recetas deliciosas para compartir</h3>
+                <p>¿Te encanta la cocina? Aquí comparto algunas de mis recetas favoritas. ¡Anímate a probarlas y compartir tus propias creaciones!</p>
+                <a href="#">Leer más...</a>
+            </article>
+            <!-- Puedes agregar más artículos según sea necesario -->
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Alguna pregunta o sugerencia? ¡Estamos aquí para escucharte!</p>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chat ❤ Date Inc.</p>
+    </footer>
+
+</body>
+</html>
