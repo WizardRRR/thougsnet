@@ -4,14 +4,20 @@
 @import './components/footer.css';
 @import './components/tag.css';
 @import './components/cta.css';
+@import './components/signup.css';
+@import './components/header.css';
 
 /* Variables */
 :root {
   /* Colors */
-  --primary-color: #4b4870; /* Ideal for the header && background */
-  --secondary-color: #e62ba9; /* Can bed to highlight specific elements */
-  --tertiary-color: #f7b454; /* Can be used to accentuate certain elements */
-  --highlight-color: #ff4c60; /* Ideal for buttons or eye-catching elements */
+  --primary-color: #4b4870;
+  /* Ideal for the header && background */
+  --secondary-color: #e62ba9;
+  /* Can bed to highlight specific elements */
+  --tertiary-color: #f7b454;
+  /* Can be used to accentuate certain elements */
+  --highlight-color: #ff4c60;
+  /* Ideal for buttons or eye-catching elements */
   --background-color: #f9f9fe;
 
   --title-color: var(--primary-color);
@@ -101,6 +107,15 @@ ul {
   list-style: none;
 }
 
+input {  
+  outline: none;
+  border:none;
+}
+
+input:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -157,6 +172,14 @@ img {
   display: flex;
 }
 
+.no-display {
+  display: none;
+}
+
+.bl-display {
+  display: block;
+}
+
 .first-letter {
   font-weight: var(--font-semi-bold);
   color: var(--secondary-color);
@@ -183,15 +206,19 @@ img {
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }
+
+  .section__title {
+    padding: 0 1rem .25rem;
+  }
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem
-  } 
+  }
+
   .container {
     margin: 0 var(--mb-1);
   }
 }
-

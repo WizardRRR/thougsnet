@@ -1,0 +1,49 @@
+.signup {
+}
+
+.signup__content {
+    column-gap: 4rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.signup__content-label {
+    font-size: 1.75rem;
+    color: var(--highlight-color);
+    text-align: center;
+    padding: 0 3rem .25rem;
+}
+
+.signup__content-input {
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    border: 1px solid var(--neutral-200);
+    color: rgba(75, 72, 112, 0.7);
+    font-size: var(--normal-font-size);
+}
+
+.signup__content-input:focus {
+    border: 1px solid var(--tertiary-color);
+}
+
+
+/* Breakpoints */
+/* For largen devices */
+@media screen and (max-width: 992px) {
+    .signup__content {
+        /* max-width: 380px; */
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .signup__content-label {
+        padding: 0 1rem .25rem
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}
