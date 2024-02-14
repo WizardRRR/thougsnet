@@ -1,0 +1,68 @@
+/* Imports */
+@import '../global.css';
+
+.cards__container {
+  align-items: center;
+  column-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.post__card {
+  flex-direction: column;
+  margin: 0 auto var(--mb-2-5);
+  max-width: 380px;
+}
+
+.post__header {
+  margin-bottom: var(--mb-0-5);
+}
+
+.post__title {
+  font-size: var(--h2-font-size);
+}
+
+.post__date {
+  color: var(--tertiary-color);
+  font-size: var(--font-normal);
+}
+
+.post__text {
+  line-height: 1.25rem;
+}
+
+.post__footer {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post__link {
+  align-items: center;
+  color: var(--highlight-color);
+  column-gap: .25rem;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.post__link i {
+  padding-top: 4px;
+  transition: all .5s;
+}
+
+.post__link:hover i {
+  transform: translateX(.25rem);
+}
+
+/* Breakpoints */
+/* For largen devices */
+@media screen and (max-width: 992px) {
+  .cards__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}

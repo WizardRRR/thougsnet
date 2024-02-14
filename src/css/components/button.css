@@ -1,0 +1,35 @@
+/* Imports */
+@import '../global.css';
+
+.btn {
+  border-radius: 1rem;
+  box-shadow: 0px 3px 5px -1px rgba(7,10,25,.2);
+  display: inline-block;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+  max-width: 120px;
+  padding: 1rem 1.25rem;
+  transition: all .5s;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.btn-primary {
+  color: var(--neutral-50);
+  background-color: var(--highlight-color);
+}
+
+.btn-primary:hover {
+
+}
+
+.btn-secondary {
+  color: var(--neutral-50);
+  background-color: var(--tertiary-color);
+}
+
+.btn-secondary:hover {
+
+}

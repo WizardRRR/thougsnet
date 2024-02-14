@@ -1,0 +1,197 @@
+/* Imports */
+@import './components/button.css';
+@import './components/card.css';
+@import './components/footer.css';
+@import './components/tag.css';
+@import './components/cta.css';
+
+/* Variables */
+:root {
+  /* Colors */
+  --primary-color: #4b4870; /* Ideal for the header && background */
+  --secondary-color: #e62ba9; /* Can bed to highlight specific elements */
+  --tertiary-color: #f7b454; /* Can be used to accentuate certain elements */
+  --highlight-color: #ff4c60; /* Ideal for buttons or eye-catching elements */
+  --background-color: #f9f9fe;
+
+  --title-color: var(--primary-color);
+  --subtitle-color: var(--tertiary-color);
+
+  /* Neutral */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  --neutral-950: #0a0a0a;
+
+  /* Font and Typography */
+  --body-font: 'Josefin Sans', sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px */
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /* Font weight */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* Margins bottom */
+  /* .5rem = 8px | 1rem = 16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+
+/* Response typography */
+@media screen and (max-width: 992px) {
+  :root {
+    /* .5rem = 8px | 1rem = 16px */
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--body-font);
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reusable CSS classes */
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section__title {
+  color: var(--title-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  padding: 0 3rem .25rem;
+}
+
+.section__subtitle {
+  color: var(--subtitle-color);
+  display: block;
+  font-size: var(--normal-font-size);
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* Layout */
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.first-letter {
+  font-weight: var(--font-semi-bold);
+  color: var(--secondary-color);
+}
+
+/* Breakpoints */
+/* For largen devices */
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 0 var(--mb-1-5);
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height);
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem
+  } 
+  .container {
+    margin: 0 var(--mb-1);
+  }
+}
+

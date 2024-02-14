@@ -1,0 +1,25 @@
+/* Imports */
+@import '../global.css';
+
+.tags {
+  column-gap: 1rem;
+}
+
+.tag {
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+  padding: 0.50rem .25rem;
+  transition: all .3s;
+}
+
+.tag:hover {
+  color: var(--highlight-color);
+}
+
+.tag::before {
+  color: var(--highlight-color);
+  content: '#';
+  padding-right: .25rem;
+}

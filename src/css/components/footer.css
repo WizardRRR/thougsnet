@@ -1,0 +1,50 @@
+/* Imports */
+@import '../global.css';
+
+.footer {
+  
+}
+
+.footer__sidebar {
+  column-gap: 4rem;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.sidebar__title {
+  text-align: center;
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.sidebar__article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem .50rem 0;
+}
+
+.sidebar__tags {
+
+}
+
+.sidebar__tags .tags {
+  
+}
+
+.sidebar__followus {
+
+}
+
+/* Breakpoints */
+/* For largen devices */
+@media screen and (max-width: 992px) {
+  .footer__sidebar {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}

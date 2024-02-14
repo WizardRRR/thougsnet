@@ -1,0 +1,23 @@
+/* Imports */
+@import '../global.css';
+
+.cta {
+
+}
+
+.cta__content {
+  column-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cta__form {
+  flex-direction: column;
+}
+
+.form__text {
+
+}
+
+.form__btn {
+
+}

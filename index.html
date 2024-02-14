@@ -1,170 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THOUGSNET: Aprendiendo a nuestra manera</title>
-    <link rel="stylesheet" href="./src/css/global.css" />
-    <script type="module" src="./src/js/app.js"></script>
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="nav container">
-        <a class="nav__link" href="#">THOUGHSNET</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THOUGSNET: Aprendiendo a nuestra manera</title>
+  <!-- Typography - Josefin Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/global.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JS -->
+  <script type="module" src="./src/js/app.js"></script>
+</head>
 
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="">Contacto</a>
-            </li>
-          </ul>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="nav__link" href="#"><span class="first-letter">THOUGHS</span>NET</a>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="">Nosotros</a>
-            </li>
-          </ul>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="">Contacto</a>
+          </li>
+        </ul>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="">Terminos y Condiciones</a>
-            </li>
-          </ul>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="">Nosotros</a>
+          </li>
+        </ul>
 
-          <!-- nothing for now -->
-          <i class="nav_close"></i>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="cta container">
-        <div class="cta__content">
-          <h2>Enterate de las mejores...</h2>
-          <form action="">
-            <label for=""
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              quidem aliquam, pariatur praesentium esse mollitia
-              dignissimos?</label
-            >
-            <div>
-              <button>Registrarse</button>
-            </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="">Terminos y Condiciones</a>
+          </li>
+        </ul>
+
+        <!-- nothing for now -->
+        <i class="nav_close"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="cta container section">
+      <h2 class="section__title">Toma el Control: Únete a Nuestra Aventura</h2>
+      <p class="section__subtitle">Explora y Sumergete en Historias Inolvidables</p>
+
+      <div class="cta__content grid">
+          <form class="cta__form flex" action="">
+            <label class="form__text" for="">¿Buscas una nueva fuente de inspiración y entretenimiento? ¡Haz clic aquí
+              para descubrir todo lo
+              que tenemos para ofrecerte en nuestro blog
+            </label>
+            <button class="form__btn btn btn-primary">Registrarse</button>
           </form>
-          <p></p>
-        </div>
         <figure>
           <img src="" alt="Call to Action" />
         </figure>
-      </section>
-
-      <section class="posts container">
-        <article class="post__card">
-          <header class="post__header">
-            <h3 class="post__title">Mi gato es hermoso</h3>
-            <time class="post__date" datetime="2023-02-01"
-              >1 de Febrero, 2023</time
-            >
-          </header>
-          <main class="post__main">
-            <p class="post__text text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, sequi voluptates officiis quidem odit amet commodi
-              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
-              voluptatibus. Aliquid illo quas iste debitis!
-            </p>
-          </main>
-          <footer class="post__foot">
-            <div>
-              <p class="post__tag"><span>#</span>Tag1</p>
-              <p class="post__tag"><span>#</span>Tag2</p>
-            </div>
-            <div>
-              <a class="post__link" href="">Continua Leyendo</a>
-            </div>
-          </footer>
-        </article>
-        <article class="post__card">
-          <header class="post__header">
-            <h3 class="post__title">Mi gata es hermosa</h3>
-            <time class="post__date" datetime="2023-02-01"
-              >2 de Febrero, 2023</time
-            >
-          </header>
-          <main class="post__main">
-            <p class="post__text text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, sequi voluptates officiis quidem odit amet commodi
-              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
-              voluptatibus. Aliquid illo quas iste debitis!
-            </p>
-          </main>
-          <footer class="post__foot">
-            <div>
-              <p class="post__tag"><span>#</span>Tag1</p>
-              <p class="post__tag"><span>#</span>Tag2</p>
-            </div>
-            <div>
-              <a class="post__link" href="">Continua Leyendo</a>
-            </div>
-          </footer>
-        </article>
-        <article class="post__card">
-          <header class="post__header">
-            <h3 class="post__title">Testing smth</h3>
-            <time class="post__date" datetime="2023-02-01"
-              >3 de Febrero, 2023</time
-            >
-          </header>
-          <main class="post__main">
-            <p class="post__text text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, sequi voluptates officiis quidem odit amet commodi
-              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
-              voluptatibus. Aliquid illo quas iste debitis!
-            </p>
-          </main>
-          <footer class="post__foot">
-            <div>
-              <p class="post__tag"><span>#</span>Tag1</p>
-              <p class="post__tag"><span>#</span>Tag2</p>
-            </div>
-            <div>
-              <a class="post__link" href="">Continua Leyendo</a>
-            </div>
-          </footer>
-        </article>
-      </section>
-
-      <section class="signup container">
-        <form action="">
-          <label for=""
-            >Registrate para enterarte de las ultimas novedades</label
-          >
-          <div>
-            <input type="text" placeholder="Ingresa tu correo electronico" />
-            <button>Registrarse</button>
-          </div>
-        </form>
-      </section>
-    </main>
-    <footer class="footer container">
-      <section class="footer__sidebar">
-        <div class="sidebar__articles">
-          <h3>[Ultimos Articulos</h3>
-        </div>
-        <div class="sidebar__tags">
-          <h3>Tag m[as usados</h3>
-        </div>
-        <div class="sidebar__followus">
-          <h3>Siguenos</h3>
-        </div>
-      </section>
-      <div class="">
-        <h3>
-          <span class="">Thougsnet</span>©2024. Todos los derechos reservados
-        </h3>
       </div>
-    </footer>
-  </body>
+
+    </section>
+
+    <section class="cards container section">
+      <h2 class="section__title">Explora la Convergencia entre Mundos Fantásticos y Digitales</h2>
+      <p class="section__subtitle">Donde Fantasía y Tecnología Chocan</p>
+      <div class="cards__container grid">
+        <article class="post__card flex">
+          <header class="post__header">
+            <h3 class="post__title"><span class="first-letter">E</span>ntre Letras y Controladores: Un Viaje Interactivo
+            </h3>
+            <time class="post__date" datetime="2023-02-01">1 de Febrero, 2023</time>
+          </header>
+          <main class="post__main">
+            <p class="post__text text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, sequi voluptates officiis quidem odit amet commodi
+              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
+              voluptatibus. Aliquid illo quas iste debitis!
+            </p>
+          </main>
+          <footer class="post__footer flex">
+            <div class="tags flex">
+              <p class="tag">Games</p>
+              <p class="tag">Love</p>
+            </div>
+            <div>
+              <a class="post__link" href="">Continua
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </footer>
+        </article>
+        <article class=" post__card">
+          <header class="post__header">
+            <h3 class="post__title"><span class="first-letter">E</span>ntre Tinta y Papel: Aventuras, Misterios y Más
+            </h3>
+            <time class="post__date" datetime="2023-02-01">2 de Febrero, 2023</time>
+          </header>
+          <main class="post__main">
+            <p class="post__text text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, sequi voluptates officiis quidem odit amet commodi
+              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
+              voluptatibus. Aliquid illo quas iste debitis!
+            </p>
+          </main>
+          <footer class="post__footer flex">
+            <div class="tags flex">
+              <a href="#" class="tag">Death</a>
+              <a href="#" class="tag">Comedy</a>
+            </div>
+            <div>
+              <a class="post__link" href="">Continua
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </footer>
+        </article>
+        <article class="post__card">
+          <header class="post__header">
+            <h3 class="post__title"><span class="first-letter">P</span>alabras que Transforman: Sumérgete en la Magia de
+              la Lectura</h3>
+            <time class="post__date" datetime="2023-02-01">3 de Febrero, 2023</time>
+          </header>
+          <main class="post__main">
+            <p class="post__text text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, sequi voluptates officiis quidem odit amet commodi
+              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
+              voluptatibus. Aliquid illo quas iste debitis!
+            </p>
+          </main>
+          <footer class="post__footer flex">
+            <div class="tags flex">
+              <p class="tag">Action</p>
+              <p class="tag">Horror</p>
+            </div>
+            <div>
+              <a class="post__link" href="">Continua
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </footer>
+        </article>
+        <article class="post__card">
+          <header class="post__header">
+            <h3 class="post__title"><span class="first-letter">R</span>etrogaming: Una Odisea por los Clásicos y los
+              Nuevos Títulos</h3>
+            <time class="post__date" datetime="2023-02-01">3 de Febrero, 2023</time>
+          </header>
+          <main class="post__main">
+            <p class="post__text text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, sequi voluptates officiis quidem odit amet commodi
+              distinctio quibusdam magnam maiores itaque neque nesciunt dolorem
+              voluptatibus. Aliquid illo quas iste debitis!
+            </p>
+          </main>
+          <footer class="post__footer flex">
+            <div class="tags flex">
+              <p class="tag">Sci-Fi</p>
+              <p class="tag">Fantasy</p>
+            </div>
+            <div>
+              <a class="post__link" href="">Continua
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="signup container section">
+      <h2 class="section__title">Atento a las ultimas noveades..</h2>
+      <p class="section__subtitle">Lorem ipsum dolor sit.</p>
+      <form action="">
+        <label for="">Registrate para enterarte de las ultimas novedades</label>
+        <div>
+          <input type="text" placeholder="Ingresa tu correo electronico" />
+          <button class="btn btn-primary">Registrarse</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__sidebar container section grid">
+      <div class="sidebar__articles">
+        <h3 class="sidebar__title"><span class="first-letter">Ú</span>ltimos Articulos</h3>
+        <div>
+          <div class="sidebar__article">
+            <a href="#">Entre Letras y Controladores: Un Viaje Interactivo</a>
+            <time class="post__date" datetime="2023-02-01">1 de Febrero, 2023</time>
+          </div>
+          <div class="sidebar__article">
+            <a href="#">Entre Tinta y Papel: Aventuras, Misterios y Más</a>
+            <time class="post__date" datetime="2023-02-01">2 de Febrero, 2023</time>
+          </div>
+          <div class="sidebar__article">
+            <a href="#">Palabras que Transforman: Sumérgete en la Magia de la Lectura</a>
+            <time class="post__date" datetime="2023-02-01">3 de Febrero, 2023</time>
+          </div>
+          <div class="sidebar__article">
+            <a href="#">Retrogaming: Una Odisea por los Clásicos y los Nuevos Títulos</a>
+            <time class="post__date" datetime="2023-02-01">3 de Febrero, 2023</time>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__tags">
+        <h3 class="sidebar__title"><span class="first-letter">T</span>ag más usados</h3>
+        <div class="tags">
+          <a class="tag" href="#">Games</a>
+          <a class="tag" href="#">Love</a>
+          <a class="tag" href="#">Death</a>
+          <a class="tag" href="#">Comedy</a>
+          <a class="tag" href="#">Action</a>
+          <a class="tag" href="#">Horror</a>
+          <a class="tag" href="#">Romance</a>
+          <a class="tag" href="#">Sci-Fi</a>
+          <a class="tag" href="#">Fantasy</a>
+        </div>
+      </div>
+      <div class="sidebar__followus">
+        <h3 class="sidebar__title"><span class="first-letter">S</span>íguenos</h3>
+      </div>
+    </section>
+    <!-- <div class="">
+      <h3>
+        <span class="">Thougsnet</span>©2024. Todos los derechos reservados
+      </h3>
+    </div> -->
+  </footer>
+</body>
+
 </html>
